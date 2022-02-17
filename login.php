@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Login</title>
+</head>
+<body>
+<!-- Navbar  -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+      <div class="container">
+        <a class="navbar-brand" href="index.php"><img src="img/logoDourada.png" alt="" width="90" height="37" ></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="login.php">Entrar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="controle/clientes.php">Cadastrar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="contato.php">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <br><br>
+
+    <div class="container col-11 py-5" id="login">
+        <div class="row bg-light">
+            <div class="col-md-12 py-3">
+                <h2>Faça seu Login</h2>
+            </div>
+                <div class="col-md-4 py-3">
+                    <img src="img/cadeado.png" alt="" width="250px">                  
+                </div>
+                <div class="col-md-8 py-3">
+                    <form action="controle/logar.php" method="POST">
+
+                        <label for="usuario" class="badge">Usuário: </label>
+
+                        <input class="form-control" type="text" name="usuario" id="usuario" placeholder="Digite seu Login" style="width: 50%" required>
+
+                        <label for="senha" class="badge">Senha:</label>
+                        <input class="form-control" type="password" name="senha" id="senha" placeholder="Digite sua Senha" style="width:50%; margin-top: 15px;" required><br>
+
+                        <input type="submit" value="Entrar" class="btn  btn-warning" style="color: #000000; width: 50%;">
+
+
+                    
+                    
+                    
+                    
+                    </form>
+                   
+                </div>
+
+        </div>
+    </div>
+</body>
+</html>
